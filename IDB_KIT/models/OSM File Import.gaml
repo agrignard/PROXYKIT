@@ -43,8 +43,9 @@ global
 			//do the generic agent die
 			do die;
 		}
-
+    //save world.shape to:"../results/redonda.shp" type:"shp";
 	}
+	 
 
 }
 
