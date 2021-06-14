@@ -19,7 +19,7 @@ global {
 	string parameter_folder_path <- "../../COMOKIT/Parameters/";
 	
 	//string dataset_path <- "../Datasets/Redonda/"; // Relative path to the folder containing the boundary.shp, buildings.shp, satellite.png, etc. datafiles. 
-	string dataset_path <- "../Datasets/Mirones/"; // Relative path to the folder containing the boundary.shp, buildings.shp, satellite.png, etc. datafiles. 
+	string dataset_path <- "../Datasets/Mirones_Bajo/"; // Relative path to the folder containing the boundary.shp, buildings.shp, satellite.png, etc. datafiles. 
 
 	action define_policy{  
 		// ***************************************************************************
@@ -55,10 +55,10 @@ experiment Simplepolicy parent: "Abstract Experiment" virtual: true{
 	}
 }
 
-experiment "Simple Policy Mirones" parent: Simplepolicy {
-	parameter dataset_path var: dataset_path <- "../Datasets/Mirones/"; 
+experiment "Simple Policy Mirones Bajo" parent: Simplepolicy {
+	parameter dataset_path var: dataset_path <- "../Datasets/Mirones_Bajo/"; 
 }
 
-experiment "Simple Policy Redonda" parent: Simplepolicy {
-	parameter dataset_path var: dataset_path <- "../Datasets/Redonda/"; 
+experiment "Simple Policy Mesa Redonda" parent: Simplepolicy {
+	parameter dataset_path var: dataset_path <- "../Datasets/Mesa_Redonda/"; 
 }
